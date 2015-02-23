@@ -1,0 +1,13 @@
+﻿<!-- ko with: home -->
+<h2>My Notebook</h2>
+
+<div class="row">
+    <div class="col-md-10">
+        <div data-bind="foreach: notes">
+            <h3 data-bind="text: heading"></h3>
+            <p data-bind="text: body"></p>
+            <p style="color:#cecece">Created on <span data-bind="text: createdDate"></span></p>
+        </div>
+    </div>
+</div>
+<!-- /ko -->
